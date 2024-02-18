@@ -1,0 +1,223 @@
+@use "sass:math";
+
+// media query
+@mixin media($media:mobile, $width:max){
+  @if $media == mobile{
+    $media : 875px;
+  }
+  @if $media == mobile-old{
+    $media : 320px;
+  }
+  @if $media == mobile-medio{
+    $media : 420px;
+  }
+  @if $media == tablet{
+    $media : 1024px;
+  }
+  @if $media == tablet-mini{
+    $media : 992px;
+  }
+  @if $media == desktop{
+    $media : 1300px;
+  }
+  @if $media == desktop-hq{
+    $media : 1380px;
+  }
+  @if $media == laptop{
+    $media : 1450px;
+  }
+  @if $media == full-hd{
+    $media : 1920px;
+  }
+  @media screen and (#{$width}-width:$media){
+    @content;
+  }
+}
+
+@mixin mediaforce($media:desktop){
+  $min : 1200px;
+  $max : 1450px;
+  @if $media == desktop{
+    $min : 1200px;
+    $max : 1450px;
+  }
+  @if $media == laptop{
+    $min : 875px;
+    $max : 1280px;
+  }
+  @media (min-width:$min) and (max-width: $max){
+    @content;
+  }
+}
+
+//Generador de columnas
+@mixin generar-column-min($title,$n,$i:1){
+  @for $i from 1 to $n{
+    @include media($width:min){
+      .#{$title}-desk#{$i}{
+        $multi:$i*100%;
+        width:math.div($multi,$n);
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    @include media(){
+      .#{$title}-#{$i}{
+        $multi:$i*100%;
+        width:math.div($multi,$n);
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+//columnas
+@mixin generate-column-($n,$i:1){
+  @for $i from 1 to $n {
+    .column-#{$i} {
+      column-count: $i;
+      @include media() {
+        column-count: 1;
+      }
+    }
+  }
+}
+
+
+//box shadow
+
+@mixin box-shadow($inset:false,$xPos:0,$yPos:3px,$bRadius:6px,$sRadius:0px,$color:rgba(#000,0.16) ) {
+  @if $inset {
+    -webkit-box-shadow: inset $xPos $yPos $bRadius $sRadius $color;
+    -moz-box-shadow: inset $xPos $yPos $bRadius $sRadius $color;
+    box-shadow: inset $xPos $yPos $bRadius $sRadius $color;
+  }  @else {
+    -webkit-box-shadow: $xPos $yPos $bRadius $sRadius $color;
+    -moz-box-shadow: $xPos $yPos $bRadius $sRadius $color;
+    box-shadow: $xPos $yPos $bRadius $sRadius $color;
+  }
+}
+
+
+//centrado
+@mixin center($position:absolute,$top:50%,$left:50%,$Thorizontal:-50%,$Tvertical:-50%) {
+  position: $position;
+  top: $top;
+  left: $left;
+  transform: translate($Thorizontal, $Tvertical);
+}
+@mixin center-top($position:absolute,$top:50%) {
+  position: $position;
+  top: $top;
+  transform: translate(0,-50%);
+}
+@mixin center-left($position:absolute, $left:50%) {
+  position: $position;
+  left: $left;
+  transform: translate(-50%,0);
+}
+// gradiantes
+@mixin gradient($position:top,$base:#6f719c, $final:#d0c9db) {
+  background: $base; // Old browsers
+  background: -moz-linear-gradient($position, $base 1%, $final 100%);
+  background: -webkit-linear-gradient($position, $base 1%, $final 100%);
+  background: linear-gradient($position, $base 1%, $final 100%);
+}
+@mixin gradient2($position:top,$base:#6f719c, $por1:1%, $final:#d0c9db,$por2:100%) {
+  background: $base; // Old browsers
+  background: -moz-linear-gradient($position, $base $por1, $final $por2);
+  background: -webkit-linear-gradient($position, $base $por1, $final $por2);
+  background: linear-gradient($position, $base $por1, $final $por2);
+}
+@mixin gradient-radial($position:center,$base:rgba(6,17,26,1), $final:rgba(21,60,92,1)){
+  background: $base;
+  background: -moz-radial-gradient($position, ellipse cover, $base 0%, $final 0%, $base 100%);
+  background: -webkit-gradient(radial, $position $position, 0px, center $position, 100%, color-stop(0%, $base), color-stop(0%, $base), color-stop(100%, $base));
+  background: -webkit-radial-gradient($position, ellipse cover, $base 0%, $final 0%, $base 100%);
+  background: -o-radial-gradient($position, ellipse cover, $base 0%, $final 0%, $base 100%);
+  background: -ms-radial-gradient($position, ellipse cover, $base 0%, $final 0%, $base 100%);
+  background: radial-gradient(ellipse at $position, $base 0%, $final 0%, $base 100%);
+}
+
+//animaciones
+@mixin transition($prop:all,$ms:500ms,$ease:ease) {
+  -webkit-transition: $prop $ms $ease;
+  -moz-transition: $prop $ms $ease;
+  -o-transition: $prop $ms $ease;
+  transition: $prop $ms $ease;
+}
+@mixin transition2($prop:all,$ms:500ms,$ease:linear,$prop2:all,$ms2:500ms,$ease2:linear) {
+  -webkit-transition: $prop $ms $ease, $prop2 $ms2 $ease2;
+  -moz-transition: $prop $ms $ease, $prop2 $ms2 $ease2;
+  -o-transition: $prop $ms $ease, $prop2 $ms2 $ease2;
+  transition: $prop $ms $ease, $prop2 $ms2 $ease2;
+}
+
+//@mixin keyframes($name, $arguments...) {
+//  @-moz-keyframes #{$name} { $arguments }
+//  @-webkit-keyframes #{$name} { $arguments }
+//  @keyframes #{$name} { $arguments }
+//}
+@mixin animation($arguments) {
+  -webkit-animation: $arguments;
+  -moz-animation: $arguments;
+  animation: $arguments;
+}
+
+//trienagulos
+@mixin triangle($pos:'left',$width:20px,$color:#00407F){
+  @if ($pos == left){
+    border-left: $width solid $color;
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+  }
+    @if ($pos == right){
+    border-right: $width solid $color;
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+  }
+    @if ($pos == top){
+    border-top: $width solid $color;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+  }
+    @if ($pos == bottom){
+    border-bottom: $width solid $color;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+  }
+}
+
+//video
+@mixin video(){
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@mixin button($color){
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+  border-color:$color;
+  &:hover,&:focus{
+    border: 1px solid $color;
+    background-color: #fff;
+    color: $color;
+  }
+}

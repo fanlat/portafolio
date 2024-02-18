@@ -1,0 +1,272 @@
+
+html{
+      //scroll-behavior: smooth;
+      //overflow-y: scroll;
+    body {
+      @include Merriweather();
+      margin: 0;
+      padding: 0;
+    }
+  }
+a {
+    text-decoration: none;
+  
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('/images/icons/arrow-select.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size:45px;
+  }
+//btn-primary
+.btn{
+  &.btn-primary{
+    background-color:$primary;
+    border-radius: 0;
+    border: none;
+    margin-top: 15px;
+    &:hover{
+      background-color:$primary;
+    }
+  }
+  &.btn-danger{
+    background-color:$principal;
+    border-radius: 0;
+    border: none;
+    margin-top: 15px;
+    &:hover{
+      background-color:$primary;
+    }
+  }
+  &.button{
+    @include button($primary);
+  }
+}
+
+  //carusel generico
+.owl-loaded {
+    overflow: hidden;
+    position: relative;
+
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item {
+          display: inline-block;
+        }
+      }
+    }
+    .owl-nav {
+      display: none;
+      @include center();
+    }
+    .owl-dots {
+      display: none;
+    }
+  }
+#slide{
+  .owl-loaded{
+    .owl-dots{
+      display: block;
+      position: absolute;
+      bottom: 30px;
+      @include center-left();
+      .owl-dot{
+        width: 20px;
+        height: 20px;
+        border:none;
+        border-radius: 50%;
+        background-color: $white;
+        @include box-shadow($color:transparent);
+        margin-left: 10px;
+        &.active{
+          background-color: $gold;
+        }
+      }
+    }
+  }
+}
+.navigation{
+  @include media(){
+    display: none;
+  }
+  @include center-top();
+  z-index: 1;
+  width: 100%;
+  .arrow{
+    position: absolute;
+    // @include box-shadow($xPos:1px,$yPos:2px,$bRadius:7px);
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    &.left{
+      left: -50px;
+    }
+    &.right{
+      right: -30px;
+      img{
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+  
+//modal
+.modal {
+  &.in {
+    opacity: 1 !important;
+  }
+  .modal-dialog {
+    &.modal-xl {
+      width: fit-content;
+      max-width: fit-content;
+      margin-top: 100px;
+    }
+    .modal-content {
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      //overflow: hidden;
+
+      .modal-body {
+        height: 645px;
+        padding: 0;
+
+      }
+    }
+  }
+}  
+.modal-backdrop {
+  &.in {
+    opacity: 0.5 !important;
+  }
+} 
+
+//breadcrombs !important
+.breadcrumb {
+  background-color: transparent;
+  margin: 0;
+
+  .breadcrumb-item {
+    &:before {
+      display: none;
+    }
+
+    &.active {
+      font-weight: 800;
+      font-size: 12px;
+      padding-top: 5px;
+    }
+
+    a {
+      font-weight: 800;
+      color: $txt;
+      font-size: 12px;
+    }
+  }
+}
+  
+//paginator
+.paginationjs {
+  .paginationjs-pages {
+    ul {
+      list-style: none;
+      li {
+        list-style: none;
+        display: inline-block;
+
+        &.paginationjs-prev {
+          a {
+            margin-right: 15px;
+          }
+        }
+        &.paginationjs-next {
+          margin-left: -15px;
+
+          a {
+            margin-left: 15px;
+          }
+        }
+        &.paginationjs-page {
+          margin-right: 15px;
+        }
+        a {
+          color: $txt;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+//flotante
+.flotante{
+  position: fixed;
+  //bottom: 10px;
+  top: 130px;
+  right: 0;
+  width: 150px;
+  z-index: 99999;
+  a{
+    background-color: #4CAF50;
+    position: relative;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    right: -105px;
+    color: #ffffff;
+    @include Merriweather('bold');
+    margin-top: 10px;
+    display: block;
+    img{
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    &:hover{
+      right: 0;
+    }
+  }
+}
+.work{
+	view-timeline-name: --work;
+	view-timeline-axis: block;
+	animation: linear reveal both;
+	animation-timeline: --work;
+	animation-range: entry 15% cover 25%;
+  &::before{
+    transition: all 1s ease;
+  }
+  &:hover{
+    &::before{
+      transition: all 1s ease;
+    }
+    .info{
+      display: flex;
+      transition: all 1s ease;
+      transform: scale(1);
+      strong{
+        word-spacing: 5px;
+      }
+    }
+  }
+  .info{
+    transition: all 1s ease;
+  }
+  
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}

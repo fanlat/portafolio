@@ -1,0 +1,91 @@
+#slide{
+    .carousel{
+        &.slide{
+            .carousel-control{
+                &-prev{
+                    width: fit-content;
+                }
+                &-next{
+                    width: fit-content;
+                }
+            }
+            .carousel-item{
+                .carousel-caption{
+                    left: 15px;
+                    bottom: 30px;
+                    text-align: left;
+                    h3{
+                        color: $principal;
+                        @include Merriweather(bold);
+                        font-size: 3vw;
+                        @include media(){
+                            font-size: 30px;
+                        }
+                    }
+                    p{
+                        border-left: 10px solid $principal;
+                        font-size: 2vw;
+                        padding: 5px;
+                        display: block;
+                        @include media(){
+                            font-size: 18px;
+                        }
+                        strong{
+                            color: $principal;
+                        }
+                    }
+                    a{
+                        &.btn{
+                            &.btn-primary{
+                                border-radius: 0;
+                                background-color: #4c96c3;
+                                border: none;
+                                padding: 7px 50px;
+                                @include Merriweather();
+                            }
+                        }
+                    }
+                    .blue{
+                        h3{
+                            color: $primary;
+                        }
+                        p{
+                            border-left: 10px solid $primary;
+                            strong{
+                                color: $primary;
+                            }
+                        }
+                        a{
+                            &.btn{
+                                &.btn-primary{
+                                    background-color: $principal;
+                                }
+                            }
+                        }
+                    }
+                    .red{
+                        h3{
+                            color: #fff;
+                        }
+                        p{
+                            border-left: 10px solid #fff;
+                            strong{
+                                color: #fff;
+                            }
+                        }
+                        a{
+                            &.btn{
+                                &.btn-primary{
+                                    background-color: $primary;
+                                }
+                            }
+                        } 
+                    }
+                    .none{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

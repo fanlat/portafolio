@@ -1,0 +1,16 @@
+//funtes
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;800&display=swap');
+@mixin Merriweather($b:medium){
+  @if ($b == light) {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+  }
+  @if ($b == medium) {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 500;
+  }
+  @if ($b == Bold) {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+  }
+}
