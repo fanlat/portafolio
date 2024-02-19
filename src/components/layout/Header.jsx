@@ -21,9 +21,11 @@ export const Header = () => {
     <header className='header z-30 bg-summer-green-400'>
       <nav className='info mx-auto max-w-7xl flex items-end flex-col sm:flex-row justify-between px-2 sm:px-6 py-5 lg:px-8'>
         <div className='flex items-end justify-between w-full'>
-          <div className='relative flex items-end justify-between w-fit'>
-            <img src="/images/perfil@0,5x.webp" alt="Gustavo Pozo" className='profile' />
-            <h1 className='name ml-3 text-summer-green-50'><strong className='m-0'>Gustavo Pozo</strong><br />Front End</h1>
+          <div className='relative w-fit'>
+            <NavLink to="/" className="flex items-end justify-between">
+              <img src="/images/perfil@0,5x.webp" alt="Gustavo Pozo" className='profile' />
+              <h1 className='name ml-3 text-summer-green-50'><strong className='m-0'>Gustavo Pozo</strong><br />Front End</h1>
+            </NavLink>
           </div>
           <button className='block sm:hidden' type='button' onClick={menu} title='menú' name='menú'>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-menu-2 w-10" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><title>menú</title><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
