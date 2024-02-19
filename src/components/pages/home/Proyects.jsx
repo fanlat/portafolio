@@ -11,8 +11,8 @@ export const Proyects = () => {
             <p className='text-summer-green-800 tex-lg sm:text-2xl font-light'>Estos son algunos de los proyectos en los que he trabajado.</p>
         </header>
     </section>
-    <section className='grid grid-cols-1 sm:grid-cols-2 w-full sm:w-8/12 gap-5 sm:mx-auto'>
-        <Works limit={4} towering={true}/>
+    <section className='grid sm:auto-rows-[192px] sm:grid-cols-3 grid-cols-1 w-full sm:w-9/12 gap-5 sm:mx-auto'>
+        <Works limit={6} home={true}/>
     </section>
     <section>
         <Link to='/proyectos' title="Proyectos" className='text-white text-center block mt-5 bg-gradient-to-r from-summer-green-600 to-summer-green-800 w-fit mx-auto px-8 py-1 rounded-3xl border-2'>Ver más</Link>

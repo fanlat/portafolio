@@ -6,7 +6,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, REACT',
         'categorias':'Front End',
         'descripcion':'Web de empresa de camiones Coseducam',
-        'towering':false
+        'home':true,
+        'span': false,
+        'towering': false
 
     },
 	{
@@ -16,7 +18,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, REACT',
         'categorias':'Front End',
         'descripcion':'Web de empresa de pinturas CHILCORROFIN',
-        'towering':true
+        'home':true,
+        'span': true,
+        'towering': true
     },
     {
         'id': 'soquina',
@@ -25,7 +29,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa de pinturas SOQUINA',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'pajaritos',
@@ -34,7 +40,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web edificio Pajaritos del Parque',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'CVA',
@@ -43,7 +51,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web interna de DUOC, para implementación de cursos institucionales de DUOC',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'teveo',
@@ -52,7 +62,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web interna de DUOC, tipo Netflix/Youtube de videos institucionales de DUOC',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'eventosduoc',
@@ -61,7 +73,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web interna de Eventos DUOC',
-        'towering':false
+        'home':false,
+        'span': true,
+        'towering': false
     },
     {
         'id': 'codelpa',
@@ -70,7 +84,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa de Codelpa',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'mundopintura',
@@ -79,7 +95,8 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa Mundopintura',
-        'towering':true
+        'home':true,
+        'span': false
     },
     {
         'id': 'planificadorceresita',
@@ -88,7 +105,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de sistema Planificador de Ceresita, donde se realiza una guia para indicar que pintura se debe comprar',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'pruebacolor',
@@ -97,7 +116,8 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de sistema de ventas PruebaColor de Ceresita',
-        'towering':false
+        'home':false,
+        'span': false
     },
      {
         'id': 'ceresita',
@@ -106,7 +126,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa de pinturas Ceresita',
-        'towering':true
+        'home':true,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'sipa',
@@ -115,7 +137,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa de pinturas SIPA',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'maf',
@@ -124,7 +148,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de aseguradora MAF',
-        'towering':false
+        'home':false,
+        'span': true,
+        'towering': false
     },
     {
         'id': 'servex',
@@ -133,7 +159,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa SERVEX',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'asec',
@@ -142,7 +170,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa ASEC',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'ecrgroup',
@@ -151,7 +181,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa ECR Group',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'bostoneduca',
@@ -160,7 +192,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de colegios Boston Educa',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'mpc',
@@ -169,7 +203,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa Constructora MPC',
-        'towering':true
+        'home':true,
+        'span': true,
+        'towering': false
     },
     {
         'id': 'convet',
@@ -178,7 +214,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Twig',
         'categorias':'Front End',
         'descripcion':'Web de empresa Constructora Convet',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'migasfiter',
@@ -187,7 +225,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Wordpress, PHP, SQL, wordpress',
         'categorias':'Desarrollo web',
         'descripcion':'Web de empresa Gasfiteria Migasfiter',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'centralfugas',
@@ -196,7 +236,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, Wordpress, PHP, SQL, wordpress',
         'categorias':'Desarrollo web',
         'descripcion':'Web de empresa Gasfiteria Central fugas',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'segurosfalabella',
@@ -204,8 +246,10 @@ export const Trabajos=[
         'url':'https://segurosfalabella.com/cl',
         'tecnologia':'HTML, CSS, JS',
         'categorias':'Desarrollo campñas web y mailing, front-end',
-        'descripcion':'web de seguros falabella, donde se realizo remodelación del sitio, test A/B, campañas y envios de mailing masivos',
-        'towering':false
+        'descripcion':'web de seguros falabella',
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'NotariaTejos',
@@ -214,7 +258,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'web de Notaria Tejos',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'BusesChillan',
@@ -223,7 +269,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Web de empresa de buses interurbanos, Buses Chillan',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'photofilms',
@@ -232,7 +280,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'web de productora audiovisual Photofilms',
-        'towering':false
+        'home':false,
+        'span': true,
+        'towering': false
     },
     {
         'id': 'lamurtilla',
@@ -241,7 +291,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Web de tienda de vegetales La Murtilla',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'Caprioli',
@@ -250,7 +302,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Web del restaurante Caprioli',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'Puruma',
@@ -259,7 +313,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Pagina de tienda de ropa Puruma',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'Expofoto',
@@ -268,7 +324,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Desarrollo web de la Exposicion ExpoFoto, en el cual se creo administrador y un sistema de concurso fotografico',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'viejaescuela',
@@ -277,7 +335,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, PHP, CodeIgniter, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Web de la agencia Vieja Escuela',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'espaciovital',
@@ -286,7 +346,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, PHP, CodeIgniter, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Web de la Agencia Espacio Vital',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
      {
         'id': 'paz',
@@ -295,7 +357,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS',
         'categorias':'Desarrollo web',
         'descripcion':'Web de la Agencia Espacio Vital',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'inrpac',
@@ -304,7 +368,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Intranet de la comunidad Instituto nacional de rehabilitación Pedro Aguirre Cerda',
-        'towering':false
+        'home':false,
+        'span': true,
+        'towering': false
     },
     {
         'id': 'besalco',
@@ -313,7 +379,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS',
         'categorias':'Desarrollo web',
         'descripcion':'Memoria y reporte anual de Besalco',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'sodimac',
@@ -322,7 +390,9 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS',
         'categorias':'Desarrollo web',
         'descripcion':'Memoria y reporte anual de Sodimac',
-        'towering':false
+        'home':true,
+        'span': false,
+        'towering': false
     },
     {
         'id': 'metro',
@@ -331,6 +401,8 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS',
         'categorias':'Animaciones, ajustes front',
         'descripcion':'Memoria y reporte anual del Metro año 2013',
-        'towering':false
+        'home':false,
+        'span': false,
+        'towering': false
     }
 ]

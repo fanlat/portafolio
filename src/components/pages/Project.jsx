@@ -18,7 +18,7 @@ export const Project = () => {
         <header className='mb-20'>
             <h2 className='text-summer-green-800 text-4xl sm:text-6xl font-bold uppercase text-center'>Proyectos</h2>
         </header>
-        <section className='grid grid-cols-1 sm:grid-cols-2 w-full sm:w-8/12 gap-5 sm:mx-auto'>
+        <section className='grid sm:auto-rows-[192px] sm:grid-cols-3 grid-cols-1 sm:w-9/12 gap-5 sm:mx-auto'>
             <Works/>
         </section>
     </main>

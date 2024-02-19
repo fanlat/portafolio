@@ -241,19 +241,6 @@ select {
   &::before{
     transition: all 1s ease;
   }
-  &:hover{
-    &::before{
-      transition: all 1s ease;
-    }
-    .info{
-      display: flex;
-      transition: all 1s ease;
-      transform: scale(1);
-      strong{
-        word-spacing: 5px;
-      }
-    }
-  }
   .info{
     transition: all 1s ease;
   }

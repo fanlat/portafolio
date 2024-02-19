@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 
 export const Home = () => {
   return (
-    <main id="home" className='flex flex-col bg-white justify-center pt-24 pb-10  px-5 sm:px-0'>
+    <main id="home" className='flex flex-col bg-white justify-center pt-10 sm:pt-24 sm:pb-10 px-5 sm:px-0'>
       <Helmet>
         <title>Gustavo Pozo - Portafolio</title>
         <meta name="description" content="Diseñador y programador multimedia con 9 años de experiencia. Apasionado por el desarrollo Front. Te invito a revisar mi portafolio y ver los proyectos a los que me he dedicado."></meta>
