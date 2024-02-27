@@ -59,6 +59,63 @@
         animation: colored 2s 8s forwards;
     }
 }
+#yo2{
+    enable-background:new 0 0 1668 1530;
+    .line {
+        stroke-width: 1px;
+        stroke: #000;
+    }
+    .st0{
+        fill:#CBB941;
+        stroke-width: 0;
+    }
+	.st1{
+        fill:#EDB584;
+        stroke-width: 1;
+    }
+	.st2{
+        fill:#FBE1B3;
+        stroke-width: 0;
+    }
+	.st3{
+        fill:#E5634F;
+        stroke-width: 0;
+    }
+	.st4{
+        fill:#532CF1;
+        stroke-width: 0;
+    }
+	.st5{
+        fill:#8EA5F7;
+        stroke-width: 0;
+    }
+	.st6{
+        fill:#8EC8F7;
+        stroke-width: 0;
+    }
+	.st7{
+        fill:#8EDBF7;
+        stroke-width: 0;
+    }
+	.st8{
+        fill:#D4D4D4;
+        stroke-width: 0;
+    }
+	.st9{
+        fill:#FFFFFF;
+        stroke-width: 0;
+    }
+	.st10{fill:none;}
+    path {
+        stroke-dashoffset: 13000;
+        stroke-dasharray: 13000;
+        animation: draw 5s forwards;
+    }
+    g{
+        fill-opacity: 0;
+        animation: colored 2s 5s forwards;
+    }
+}
 
 @keyframes draw {
     to{
