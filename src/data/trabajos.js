@@ -263,6 +263,17 @@ export const Trabajos=[
         'towering': false
     },
     {
+        'id': 'photofilms',
+        'title':'Photo Films',
+        'url':'',
+        'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
+        'categorias':'Desarrollo web',
+        'descripcion':'web de productora audiovisual Photofilms',
+        'home':false,
+        'span': true,
+        'towering': false
+    },
+    {
         'id': 'NotariaTejos',
         'title':'Notaria Tejos',
         'url':'',
@@ -282,17 +293,6 @@ export const Trabajos=[
         'descripcion':'Web de empresa de buses interurbanos, Buses Chillan',
         'home':false,
         'span': false,
-        'towering': false
-    },
-    {
-        'id': 'photofilms',
-        'title':'Photo Films',
-        'url':'',
-        'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
-        'categorias':'Desarrollo web',
-        'descripcion':'web de productora audiovisual Photofilms',
-        'home':false,
-        'span': true,
         'towering': false
     },
     {
@@ -336,7 +336,7 @@ export const Trabajos=[
         'categorias':'Desarrollo web',
         'descripcion':'Desarrollo web de la Exposicion ExpoFoto, en el cual se creo administrador y un sistema de concurso fotografico',
         'home':false,
-        'span': false,
+        'span': true,
         'towering': false
     },
     {
@@ -346,6 +346,17 @@ export const Trabajos=[
         'tecnologia':'HTML, CSS, JS, PHP, CodeIgniter, SQL',
         'categorias':'Desarrollo web',
         'descripcion':'Web de la agencia Vieja Escuela',
+        'home':false,
+        'span': false,
+        'towering': false
+    },
+    {
+        'id': 'inrpac',
+        'title':'Intranet INRPAC',
+        'url':'http://comunidadinrpac.cl/wp-login.php?redirect_to=http%3A%2F%2Fcomunidadinrpac.cl%2F&reauth=1',
+        'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
+        'categorias':'Desarrollo web',
+        'descripcion':'Intranet de la comunidad Instituto nacional de rehabilitación Pedro Aguirre Cerda',
         'home':false,
         'span': false,
         'towering': false
@@ -370,17 +381,6 @@ export const Trabajos=[
         'descripcion':'Web de la Agencia Espacio Vital',
         'home':false,
         'span': false,
-        'towering': false
-    },
-    {
-        'id': 'inrpac',
-        'title':'Intranet INRPAC',
-        'url':'http://comunidadinrpac.cl/wp-login.php?redirect_to=http%3A%2F%2Fcomunidadinrpac.cl%2F&reauth=1',
-        'tecnologia':'HTML, CSS, JS, CodeIgniter, PHP, SQL',
-        'categorias':'Desarrollo web',
-        'descripcion':'Intranet de la comunidad Instituto nacional de rehabilitación Pedro Aguirre Cerda',
-        'home':false,
-        'span': true,
         'towering': false
     },
     {
