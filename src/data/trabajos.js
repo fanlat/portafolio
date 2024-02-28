@@ -153,6 +153,17 @@ export const Trabajos=[
         'towering': false
     },
     {
+        'id': 'ecrsalud',
+        'title':'ECR Salud',
+        'url':'',
+        'tecnologia':'HTML, CSS, JS, Twig',
+        'categorias':'Front End',
+        'descripcion':'Web del servicio de salud ECR Salud',
+        'home':false,
+        'span': false,
+        'towering': false
+    },
+    {
         'id': 'servex',
         'title':'SERVEX',
         'url':'https://www.serviciosexternos.cl/',

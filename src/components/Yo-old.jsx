@@ -2,6 +2,7 @@ import React from 'react'
 import '../scss/generals/yo.scss'
 
 export const Yo = () => {
+  // mantengo la version vieja por si las moscas
   return (
     <svg id="yo" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1599.59 1538.04" className='w-60 sm:w-80 mx-auto'>
         <defs>
