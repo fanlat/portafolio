@@ -2,7 +2,7 @@ export const Trabajos=[
     {
         'id': 'coseducam',
         'title':'Coseducam- Preproducción',
-        'url':'https://coseducam.diig.cl/',
+        'url':'https://coseducam.cl/',
         'tecnologia':'HTML, CSS, JS, REACT',
         'categorias':'Front End',
         'descripcion':'Web de empresa de camiones Coseducam',
