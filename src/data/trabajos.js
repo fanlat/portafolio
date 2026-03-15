@@ -1,7 +1,55 @@
 export const Trabajos=[
+     {
+        'id': 'rocotoImg',
+        'title':'RocotoImg - Extención de Edge',
+        'url':'https://rocotoimg.netlify.app/',
+        'tecnologia':'HTML, CSS, JS',
+        'categorias':'Extensión de navegador',
+        'descripcion':'Extensión de navegador para Edge, que permite ver el tamaño de la imagen seleccionada, además indica si la imagen tiene versión mobile y si es responsive',
+        'home':true,
+        'span': false,
+        'towering': false
+
+    },
+    {
+        'id': 'warehousing',
+        'title':'Intranet Warehousing - Preproducción',
+        'url':'',
+        'tecnologia':'HTML, CSS, JS, REACT',
+        'categorias':'Front End',
+        'descripcion':'Intranet de Warehousing, donde se puede administrar los pedidos de los clientes, y los productos que se tienen en bodega',
+        'home':true,
+        'span': true,
+        'towering': true
+
+    },
+    {
+        'id': 'aeropuerto',
+        'title':'Sistema de Monitoreo de Camiones - Preproducción',
+        'url':'',
+        'tecnologia':'HTML, CSS, JS, REACT',
+        'categorias':'Front End',
+        'descripcion':'Web de sistema de monitoreo de camiones para warehousing',
+        'home':true,
+        'span': false,
+        'towering': false
+
+    },
+    {
+        'id': 'criadero-west-higland',
+        'title':'Criadero West Highland - Preproducción',
+        'url':'https://west-higland.netlify.app/',
+        'tecnologia':'HTML, CSS, JS, REACT',
+        'categorias':'Front End',
+        'descripcion':'Web de criadero de perros West Highland',
+        'home':true,
+        'span': false,
+        'towering': false
+
+    },
     {
         'id': 'coseducam',
-        'title':'Coseducam- Preproducción',
+        'title':'Coseducam',
         'url':'https://coseducam.cl/',
         'tecnologia':'HTML, CSS, JS, REACT',
         'categorias':'Front End',
@@ -19,8 +67,8 @@ export const Trabajos=[
         'categorias':'Front End',
         'descripcion':'Web de empresa de pinturas CHILCORROFIN',
         'home':true,
-        'span': true,
-        'towering': true
+        'span': false,
+        'towering': false
     },
     {
         'id': 'soquina',

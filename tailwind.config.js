@@ -34,11 +34,14 @@ export default {
           '900': 'hsl(180, 28%, 19%)',
           '950': 'hsl(180, 41%, 10%)',
         },
-        "cami":{
-          'green':'#7ED7C1',
-          'vanilla':'#F0DBAE',
-          'pink':'#DC8685',
-          'wine':'#B16162'
+        "needle":{
+          'green':'#B2F4D5',
+          'greed':'#D7FFE9',
+          'vanilla':'#FEF6E3',
+          'pink':'#FFA5A5',
+          'wine':'#FCD7FF',
+          'sky':'#C8FBFF',
+          'text':'#565656'
         },
         'spring':{
           'pomelo':'#FF8080',
